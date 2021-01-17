@@ -1,0 +1,441 @@
+﻿
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+body{
+
+font-family: 'Roboto', sans-serif;
+
+
+}
+.container-banner{
+
+    width: 100%;
+    height: 650px;
+}
+
+.header{
+
+    
+display: flex;
+width: 100%
+
+}
+
+.logo{
+width: 50%;
+background:  #c61e31;
+padding: 20px 60px;
+
+
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #2a2f2d;
+}
+
+.logo a span{
+    color: #ffffff;
+}
+
+.content-nav{
+
+ display: flex;
+ width: 50%;
+ padding: 20px 60px;
+ background: #c61e31;
+
+}
+.nav{
+
+width:60%;
+display: flex;
+
+}
+.nav ul{
+    display:flex;
+
+}
+.nav ul li{
+list-style: none;
+margin-right: 30px;
+
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 50px;
+    position: relative;
+    right: 40px;
+    z-index: 1;
+}
+.nav ul li a:hover{
+    color: #ff6677;
+}
+.nav ul li a:before{
+content: '';
+position: absolute;
+width: 10px;
+height: 10px;
+top: 50%;
+left: 110%;
+transform: translate(-50%, -50%);
+background:linear-gradient(90deg, #a166ff 50%, #7f2fff 50%);
+border-radius: 50%;
+transition: .1s;
+z-index: -1;
+
+}
+.nav ul li a:after{
+    width:  20px;
+    height: 20px;
+    border: 1px solid #ffffff
+    
+}
+.nav ul li a:hover:before, .nav ul li a:hover:after{
+top: -10px;
+transform:translate(-50%, -50%) scale(1);
+
+}
+
+.search-icon{
+width: 40%;
+display: flex;
+justify-content: flex-end;
+
+}
+.search-icon .txt{
+border: none;
+width: 160px;
+height: 40px;
+border-radius:20px;
+text-align: center;
+color: #2a2f2d;
+font-weight: 900;
+transition: .5s;
+
+}
+
+.search-icon i{
+width: 40px;
+height: 40px;
+background:#2a2f2d;
+border-radius: 50%;
+position:relative;
+text-align:center;
+line-height: 40px;
+color: #ffffff;
+margin-left:10px;
+
+}
+.search-icon .btnbuscar{
+width: 40px;
+height: 40px;
+position: absolute;
+border-radius: 50%;
+background: transparent;
+border:none;
+cursor:pointer;
+
+}
+
+.content-info{
+width: 100%;
+display: flex;
+
+}
+
+.info-text{
+    width: 50%;
+    height:560px;
+    position: relative;
+
+}
+
+.info-text.marca-car{
+margin-top:30px;
+margin-left: 60px;
+
+}
+ /*   */
+.info-text .marca-car h1{ 
+    font-size:70px;
+    color: #7c1218;
+    margin-top: 200px;
+    margin-left: 65px;
+    
+    
+
+}
+
+.info-text .marca-car h1 span{
+    display:block;
+   
+}
+
+
+
+
+.info-img{
+
+    width: 50%;
+    height: 560px;
+    background:  #c61e31;
+    position: relative;
+  
+    
+
+}
+.info-img .circle-form{
+
+    width:260px;
+    height: 260px;
+    background: linear-gradient(180deg, #ffffff 50%, #eb122c 50%);
+    border-radius: 50%;
+    position: absolute;
+    top:40%;
+    left: 50%;
+    transform:translate(-50%, -40%);
+    text-align: center;
+    padding: 110px 0;
+    
+    
+}
+.circle-form p{
+
+  margin-top: -50px;
+  color:#2a2f2d;
+  font-size: 30px;
+  font-family: Blippo, fantasy;
+}
+.circle-form p span{
+
+  color:#ffffff;
+}
+
+
+.info-img .circle-form:before{
+content:'';
+position: absolute;
+top:-60px;
+left: -60px;
+right:-60px;
+bottom: -60px;
+border:2px solid #ffffff;
+border-radius: 50%;
+
+
+}
+
+.info-img .circle-form:after{
+
+    content:'';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #ffffff;
+    border-radius: 50%;
+    top: 50%;
+    transform:translateY(-40%);
+    left: -71px;
+    box-shadow:376px 0px 0px #ffffff;
+
+
+}
+
+
+.info-img .name-car{
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.info-img .name-car h1{
+font-size: 100px;
+color:#ffffff;
+
+
+}
+
+.info-img .social{
+
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+
+}
+
+.info-img .social a{
+
+    display: block;
+    width:40px;
+    height:40px;
+    color:  #1fffff;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 40px;
+    position: relative;
+    z-index:1;
+
+}
+
+
+.info-img .social a:before{
+
+    content:'';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2a2f2d;
+    top:50%;
+    left:50;
+    transform:translate(-50%,-50%) scale(0);
+    z-index:-1;
+    transition: .2s;
+
+
+}
+
+.info-img .social a:hover:before{
+
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+
+
+
+/* Start car Gallery ========================================= */
+
+.car-gallery
+{
+  text-align:center;
+  margin:20px 0;
+}
+
+.car-gallery h1
+{
+  font-size:2.5rem;
+  color:#7c1218;
+  font-family: 'Krona One', sans-serif;
+  padding:40px;
+}
+
+.container-car
+{
+  max-width: 1080px;
+  margin: 10px auto;
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-auto-rows:150px 150px;
+  grid-gap:5px;
+  grid-auto-flow:row;
+}
+.gallery-item
+{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.gallery-item .img-gallery
+{
+  widows: 200%;
+  height:80%;
+  
+  overflow:hidden;
+
+  
+}
+
+.gallery-item .img-gallery img
+{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:50% 50%;
+  cursor:pointer;
+  transition:.5s ease-in-out;
+}
+.gallery-item .img-gallery:hover img
+{
+  transform:scale(1.5);
+}
+
+
+/* Start information for Autosalloni Prishtina*/
+
+.footer
+{
+  background:#efefef;
+  padding:50px 0;
+}
+
+.footer-head
+{
+  text-align:center;
+}
+
+.footer-head h1
+{
+  font-size:2.5rem;
+  color:#7c1218;
+  font-family: 'Krona One', sans-serif;
+  padding:5px;
+}
+
+
+.container-footer
+{
+  max-width:1200px;
+  margin:auto;
+}
+
+.footer .row
+{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+
+}
+.footer .col-2
+{
+  flex-basis:50%;
+}
+
+.footer-left-text h1
+{
+  text-align:center;
+}
+.footer-left-text p
+{
+  padding:5px;
+  font-size:1.2rem;
+  
+}
+.footer-right-text h1
+{
+  text-align:center;
+}
+.footer-right-text p
+{
+  padding:5px;
+  font-size:1.2rem;
+  
+}
+
+
+
+
