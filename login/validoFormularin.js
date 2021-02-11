@@ -28,7 +28,42 @@ return true;
 
 
 
-
-
 BtnSubmit.addEventListener('click', validate);
 });
+
+
+// ---------------------------------------------------------------------------------------
+
+
+var elementList = document.getElementsByClassName('klasa');
+
+
+for(var i=0;i<elementList.length;i++) {
+
+elementList[i].addEventListener('keyup', function(event){
+event.preventDefault();   
+  
+if(event.target.name=='username'){
+    usernameVal= event.target.value; 
+}
+else if(event.target.name== 'password'){
+
+    passwordVal=event.target.value;
+
+}
+
+console.log('username is: '+usernameVal+' and password is:'+passwordVal);
+})
+
+}
+
+var usernameVal="";
+var passwordVal="";
+
+
+
+
+
+  
+
+
