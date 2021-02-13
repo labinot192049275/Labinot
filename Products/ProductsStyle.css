@@ -1,0 +1,53 @@
+﻿.car-gallery
+{
+  text-align:center;
+  margin:20px 0;
+}
+
+.car-gallery h1
+{
+  font-size:2.5rem;
+  color:#7c1218;
+  font-family: 'Krona One', sans-serif;
+  padding:40px;
+}
+
+.container-car
+{
+  max-width: 1080px;
+  margin: 10px auto;
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-auto-rows:150px 150px;
+  grid-gap:5px;
+  grid-auto-flow:row;
+}
+.gallery-item
+{
+  position:relative;
+  width:100%;
+  height:100%;
+}
+.gallery-item .img-gallery
+{
+  widows: 200%;
+  height:80%;
+  
+  overflow:hidden;
+
+  
+}
+
+.gallery-item .img-gallery img
+{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:50% 50%;
+  cursor:pointer;
+  transition:.5s ease-in-out;
+}
+.gallery-item .img-gallery:hover img
+{
+  transform:scale(1.5);
+}
