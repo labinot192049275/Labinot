@@ -1,3 +1,6 @@
+﻿
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -163,6 +166,7 @@ h2
 <div class="form">
 
 	<div class="form-content">
+	<form id="mainForm" action="loginVerify.php" method="post" onsubmit="return validate()">
 		<div class="form-box">
 			<label>Emri i Perdoruesit</label>
 			<input  type="text" name="username" class="klasa"   id="userid" size="15" placeholder="Emri juaj">
@@ -172,9 +176,9 @@ h2
 			<input type="password" name="password" class="klasa"  id="pass" size="15" placeholder="��������">
 		</div>
 		<div class="form-box" style="margin-top: 30px;">
-			<input  type="submit" name="submit"  id="Btn-submit"   value="Login"  >
+			<input  type="submit" name="submit"  id="Btn-submit"   value="Login"  />
 		</div>
-
+    </form>
 	</div>
 
 	<p class="form-forget">Forget password?</p>

@@ -19,7 +19,7 @@
         <nav class="nav">
         <ul>
             <li><a href="./Products/headerAndProducts.php">PRODUKTET</a></li>
-            <li><a href="login/login -L.K.html">KYQU</a></li>
+            <li><a href="./login/login -L.K.php">KYQU</a></li>
              <li><a href="Regjistrimi-html,Css/Regjistrimi.html ">REGJISTRIMI</a></li>
              <li><a href="About us/Aboutus.html">INFO</a></li>
              
