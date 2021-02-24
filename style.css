@@ -439,3 +439,65 @@ color:#ffffff;
 
 
 
+
+@media only screen and (max-width:768px) {
+ 
+  .content-nav{
+
+    display: flex;
+    width: 70%;
+    padding: 20px 60px;
+    background: #c61e31;
+   
+   }
+  
+   .container-banner{
+
+    width: 120%;
+    height: 650px;
+   }
+   
+   .info-img .name-car h1{
+    font-size: 60px;
+    color:#ffffff;
+    }
+
+    .info-img .social{
+
+      position: absolute;
+      bottom: 15px;
+      right: 20px;
+  
+  }
+
+  .search-icon{
+    width: 40%;
+    margin-left: 70px;
+    display: flex;
+    justify-content: flex-end;
+    
+    }
+
+    .search-icon .txt{
+      border: none;
+      width: 130px;
+      height: 40px;
+      border-radius:20px;
+      text-align: center;
+      color: #2a2f2d;
+      font-weight: 900;
+      transition: .5s;
+      
+      }
+      
+          
+      .car-gallery
+      {
+        text-align:center;
+        margin-left: 140px;
+      }
+
+
+
+
+
